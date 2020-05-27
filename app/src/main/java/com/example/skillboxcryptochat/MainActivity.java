@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if (server == null) {
+        if (server == null || !server.isConnected()) {
             showToast("Нет соединения с сервером");
             return;
         }
